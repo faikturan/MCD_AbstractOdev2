@@ -29,17 +29,19 @@ namespace MCD_AbstractOdev2
         {
             _height = height;
             _width = width;
+            var random = new Random();
+            Console.BackgroundColor = (ConsoleColor)random.Next((int)ConsoleColor.Black, (int)ConsoleColor.Yellow);
         }
 
 
         public override void CalculateArea()
         {
-            throw new NotImplementedException();
+            this.Area = _height * _width;
         }
 
         public override void CalculatePerimeter()
         {
-            throw new NotImplementedException();
+            this.Perimeter = (_height * 2) + (_width * 2);
         }
     }
 }

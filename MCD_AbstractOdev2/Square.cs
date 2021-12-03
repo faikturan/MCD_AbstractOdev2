@@ -24,11 +24,13 @@ namespace MCD_AbstractOdev2
         public override void CalculateArea()
         {
             this.Area = _side * _side;
+            Console.WriteLine("Square Area: " +this.Area);
         }
 
         public override void CalculatePerimeter()
         {
             this.Perimeter = 4 * _side;
+            Console.WriteLine("Square Perimeter: " +this.Perimeter);
         }
     }
 }

@@ -29,19 +29,21 @@ namespace MCD_AbstractOdev2
         {
             _height = height;
             _width = width;
-            var random = new Random();
-            Console.BackgroundColor = (ConsoleColor)random.Next((int)ConsoleColor.Black, (int)ConsoleColor.Yellow);
+            //var random = new Random();
+            //Console.BackgroundColor = (ConsoleColor)random.Next((int)ConsoleColor.Black, (int)ConsoleColor.Yellow);
         }
 
 
         public override void CalculateArea()
         {
             this.Area = _height * _width;
+            Console.WriteLine("Rectangle Area:" +this.Area);
         }
 
         public override void CalculatePerimeter()
         {
             this.Perimeter = (_height * 2) + (_width * 2);
+            Console.WriteLine("Rectangle Perimeter: " +this.Perimeter);
         }
     }
 }

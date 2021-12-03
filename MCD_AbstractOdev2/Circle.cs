@@ -25,11 +25,13 @@ namespace MCD_AbstractOdev2
         public override void CalculateArea()
         {
             this.Area = (float)(Math.PI * Math.Pow(_radius, 2));
+            Console.WriteLine("Circle Area: " +this.Area);
         }
 
         public override void CalculatePerimeter()
         {
             this.Perimeter = (float)(2 * Math.PI * _radius);
+            Console.WriteLine("Circle Perimeter: " +this.Perimeter);
         }
     }
 }
